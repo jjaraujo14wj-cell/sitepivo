@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- ===== CONFIGURAÇÕES ESSENCIAIS ===== -->
+  <!-- UTF-8 garante que acentos e caracteres especiais funcionem -->
+  <meta charset="UTF-8">
+  <!-- viewport faz o site funcionar bem no celular -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Descrição que aparece nos resultados do Google -->
+  <meta name="description" content="Pivô Shop — Produtos de qualidade com os melhores preços. Venha nos visitar ou compre pelo WhatsApp!">
+  <!-- Título que aparece na aba do navegador -->
+  <title>Pivô Shop — Qualidade que você pode confiar</title>
+
+  <!-- ===== FONTES DO GOOGLE (gratuitas) ===== -->
+  <!-- Syne: fonte display moderna para títulos -->
+  <!-- DM Sans: corpo de texto limpo e legível -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- ===== ÍCONES (Remix Icons — gratuitos) ===== -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- ===== NOSSO CSS ===== -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ==========================================
+       HEADER / TOPO DA PÁGINA
+       ========================================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+
+      <!-- Logo -->
+      <a href="#inicio" class="logo">
+        <span class="logo__icon"><i class="ri-shopping-bag-3-fill"></i></span>
+        <span class="logo__text">Pivô<strong>Shop</strong></span>
+      </a>
+
+      <!-- Menu de navegação — desktop -->
+      <nav class="nav" id="nav">
+        <a href="#inicio" class="nav__link">Início</a>
+        <a href="#produtos" class="nav__link">Produtos</a>
+        <a href="#promocoes" class="nav__link">Promoções</a>
+        <a href="#sobre" class="nav__link">Sobre</a>
+        <a href="#contato" class="nav__link">Contato</a>
+      </nav>
+
+      <!-- Ações do header -->
+      <div class="header__actions">
+        <!-- Botão WhatsApp no header -->
+        <a href="https://wa.me/5500000000000?text=Olá,%20vim%20pelo%20site%20e%20quero%20saber%20mais!"
+           target="_blank" class="btn btn--whatsapp btn--sm" aria-label="Falar no WhatsApp">
+          <i class="ri-whatsapp-line"></i>
+          <span>WhatsApp</span>
+        </a>
+        <!-- Botão hambúrguer (aparece só no celular) -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO / BANNER PRINCIPAL
+       ========================================== -->
+  <section class="hero" id="inicio">
+    <!-- Formas decorativas de fundo -->
+    <div class="hero__bg-shape hero__bg-shape--1"></div>
+    <div class="hero__bg-shape hero__bg-shape--2"></div>
+
+    <div class="container hero__inner">
+      <!-- Texto do hero -->
+      <div class="hero__content" data-animate="fadeUp">
+        <span class="badge badge--accent">🔥 Novidades toda semana</span>
+        <h1 class="hero__title">
+          Tudo que você<br>
+          <em>precisa</em>, aqui na<br>
+          Pivô Shop
+        </h1>
+        <p class="hero__desc">
+          Produtos selecionados com qualidade garantida e os melhores preços da região.
+          Compre pela loja ou direto pelo WhatsApp!
+        </p>
+        <div class="hero__ctas">
+          <a href="#produtos" class="btn btn--primary btn--lg">
+            Ver Catálogo <i class="ri-arrow-right-line"></i>
+          </a>
+          <a href="https://wa.me/5500000000000" target="_blank" class="btn btn--outline btn--lg">
+            <i class="ri-whatsapp-line"></i> Pedir agora
+          </a>
+        </div>
+        <!-- Métricas de confiança -->
+        <div class="hero__stats">
+          <div class="stat">
+            <strong>500+</strong>
+            <span>Produtos</span>
+          </div>
+          <div class="stat__divider"></div>
+          <div class="stat">
+            <strong>2.000+</strong>
+            <span>Clientes</span>
+          </div>
+          <div class="stat__divider"></div>
+          <div class="stat">
+            <strong>5★</strong>
+            <span>Avaliação</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagem / Ilustração do hero -->
+      <div class="hero__visual" data-animate="fadeLeft">
+        <div class="hero__card-float hero__card-float--1">
+          <i class="ri-shield-check-fill"></i>
+          <span>Qualidade Garantida</span>
+        </div>
+        <div class="hero__img-wrap">
+          <!-- Placeholder visual — substitua por uma foto real da loja -->
+          <div class="hero__img-placeholder">
+            <i class="ri-store-2-fill"></i>
+            <p>Foto da Loja</p>
+            <small>Substitua por uma imagem real</small>
+          </div>
+        </div>
+        <div class="hero__card-float hero__card-float--2">
+          <i class="ri-truck-fill"></i>
+          <span>Entrega Rápida</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       DIFERENCIAIS / VANTAGENS
+       ========================================== -->
+  <section class="features">
+    <div class="container">
+      <div class="features__grid">
+
+        <!-- Cada feature-card é um diferencial da loja -->
+        <div class="feature-card" data-animate="fadeUp" data-delay="0">
+          <div class="feature-card__icon">
+            <i class="ri-shield-check-line"></i>
+          </div>
+          <h3>Qualidade Garantida</h3>
+          <p>Todos os produtos são verificados antes de chegar até você.</p>
+        </div>
+
+        <div class="feature-card" data-animate="fadeUp" data-delay="100">
+          <div class="feature-card__icon">
+            <i class="ri-whatsapp-line"></i>
+          </div>
+          <h3>Atendimento Rápido</h3>
+          <p>Resposta em minutos pelo WhatsApp. Tire todas suas dúvidas.</p>
+        </div>
+
+        <div class="feature-card" data-animate="fadeUp" data-delay="200">
+          <div class="feature-card__icon">
+            <i class="ri-price-tag-3-line"></i>
+          </div>
+          <h3>Melhor Preço</h3>
+          <p>Acompanhamos o mercado para oferecer sempre o preço justo.</p>
+        </div>
+
+        <div class="feature-card" data-animate="fadeUp" data-delay="300">
+          <div class="feature-card__icon">
+            <i class="ri-thumb-up-line"></i>
+          </div>
+          <h3>Troca Fácil</h3>
+          <p>Política de troca sem burocracia. Sua satisfação é prioridade.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PROMOÇÕES EM DESTAQUE
+       ========================================== -->
+  <section class="promocoes" id="promocoes">
+    <div class="container">
+      <div class="section-header" data-animate="fadeUp">
+        <span class="badge badge--promo">Ofertas imperdíveis</span>
+        <h2 class="section-title">Promoções da Semana</h2>
+        <p class="section-desc">Corra! Ofertas por tempo limitado com descontos incríveis.</p>
+      </div>
+
+      <!-- Banner de promoção grande -->
+      <div class="promo-banner" data-animate="fadeUp">
+        <div class="promo-banner__content">
+          <span class="promo-banner__tag">Oferta do Dia</span>
+          <h3 class="promo-banner__title">Até <em>50% OFF</em><br>em produtos selecionados</h3>
+          <p>Não perca essa oportunidade. Válido enquanto durar o estoque.</p>
+          <a href="https://wa.me/5500000000000?text=Quero%20aproveitar%20a%20promoção!" 
+             target="_blank" class="btn btn--primary">
+            Aproveitar agora <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+        <div class="promo-banner__visual">
+          <div class="promo-banner__badge">
+            <span>50%</span>
+            <small>OFF</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cards de promoções menores -->
+      <div class="promo-grid">
+        <div class="promo-card" data-animate="fadeUp" data-delay="0">
+          <span class="promo-card__tag">FRETE GRÁTIS</span>
+          <h4>Compras acima de R$ 150</h4>
+          <p>Entregamos na sua casa sem custo adicional.</p>
+        </div>
+        <div class="promo-card" data-animate="fadeUp" data-delay="100">
+          <span class="promo-card__tag">COMBO</span>
+          <h4>Leve 3, Pague 2</h4>
+          <p>Em itens selecionados do catálogo.</p>
+        </div>
+        <div class="promo-card" data-animate="fadeUp" data-delay="200">
+          <span class="promo-card__tag">PIX</span>
+          <h4>10% de desconto</h4>
+          <p>Pagando via Pix no ato da compra.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CATÁLOGO DE PRODUTOS
+       ========================================== -->
+  <section class="produtos" id="produtos">
+    <div class="container">
+      <div class="section-header" data-animate="fadeUp">
+        <span class="badge">Nosso Catálogo</span>
+        <h2 class="section-title">Produtos em Destaque</h2>
+        <p class="section-desc">Conheça nossa seleção de produtos. Clique em qualquer item para saber mais ou encomendar pelo WhatsApp.</p>
+      </div>
+
+      <!-- Filtros de categoria -->
+      <div class="filters" data-animate="fadeUp">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="eletronicos">Eletrônicos</button>
+        <button class="filter-btn" data-filter="acessorios">Acessórios</button>
+        <button class="filter-btn" data-filter="casa">Casa</button>
+        <button class="filter-btn" data-filter="moda">Moda</button>
+      </div>
+
+      <!-- Grade de produtos -->
+      <!-- Para adicionar produtos: copie um .produto-card e altere os dados -->
+      <div class="produtos-grid" id="produtosGrid">
+
+        <div class="produto-card" data-categoria="eletronicos" data-animate="fadeUp">
+          <div class="produto-card__img">
+            <div class="produto-card__placeholder"><i class="ri-smartphone-line"></i></div>
+            <span class="produto-card__badge">Novo</span>
+          </div>
+          <div class="produto-card__info">
+            <span class="produto-card__cat">Eletrônicos</span>
+            <h3 class="produto-card__name">Produto Exemplo 1</h3>
+            <div class="produto-card__price">
+              <span class="price__old">R$ 199,90</span>
+              <span class="price__current">R$ 149,90</span>
+            </div>
+            <a href="https://wa.me/5500000000000?text=Quero%20o%20Produto%20Exemplo%201" 
+               target="_blank" class="btn btn--primary btn--full">
+              <i class="ri-whatsapp-line"></i> Pedir no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="produto-card" data-categoria="acessorios" data-animate="fadeUp" data-delay="100">
+          <div class="produto-card__img">
+            <div class="produto-card__placeholder"><i class="ri-headphone-line"></i></div>
+            <span class="produto-card__badge produto-card__badge--promo">-30%</span>
+          </div>
+          <div class="produto-card__info">
+            <span class="produto-card__cat">Acessórios</span>
+            <h3 class="produto-card__name">Produto Exemplo 2</h3>
+            <div class="produto-card__price">
+              <span class="price__old">R$ 89,90</span>
+              <span class="price__current">R$ 62,90</span>
+            </div>
+            <a href="https://wa.me/5500000000000?text=Quero%20o%20Produto%20Exemplo%202" 
+               target="_blank" class="btn btn--primary btn--full">
+              <i class="ri-whatsapp-line"></i> Pedir no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="produto-card" data-categoria="casa" data-animate="fadeUp" data-delay="200">
+          <div class="produto-card__img">
+            <div class="produto-card__placeholder"><i class="ri-home-4-line"></i></div>
+          </div>
+          <div class="produto-card__info">
+            <span class="produto-card__cat">Casa</span>
+            <h3 class="produto-card__name">Produto Exemplo 3</h3>
+            <div class="produto-card__price">
+              <span class="price__current">R$ 79,90</span>
+            </div>
+            <a href="https://wa.me/5500000000000?text=Quero%20o%20Produto%20Exemplo%203" 
+               target="_blank" class="btn btn--primary btn--full">
+              <i class="ri-whatsapp-line"></i> Pedir no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="produto-card" data-categoria="moda" data-animate="fadeUp" data-delay="300">
+          <div class="produto-card__img">
+            <div class="produto-card__placeholder"><i class="ri-t-shirt-line"></i></div>
+            <span class="produto-card__badge">Popular</span>
+          </div>
+          <div class="produto-card__info">
+            <span class="produto-card__cat">Moda</span>
+            <h3 class="produto-card__name">Produto Exemplo 4</h3>
+            <div class="produto-card__price">
+              <span class="price__current">R$ 59,90</span>
+            </div>
+            <a href="https://wa.me/5500000000000?text=Quero%20o%20Produto%20Exemplo%204" 
+               target="_blank" class="btn btn--primary btn--full">
+              <i class="ri-whatsapp-line"></i> Pedir no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="produto-card" data-categoria="eletronicos" data-animate="fadeUp" data-delay="0">
+          <div class="produto-card__img">
+            <div class="produto-card__placeholder"><i class="ri-computer-line"></i></div>
+          </div>
+          <div class="produto-card__info">
+            <span class="produto-card__cat">Eletrônicos</span>
+            <h3 class="produto-card__name">Produto Exemplo 5</h3>
+            <div class="produto-card__price">
+              <span class="price__old">R$ 349,90</span>
+              <span class="price__current">R$ 299,90</span>
+            </div>
+            <a href="https://wa.me/5500000000000?text=Quero%20o%20Produto%20Exemplo%205" 
+               target="_blank" class="btn btn--primary btn--full">
+              <i class="ri-whatsapp-line"></i> Pedir no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="produto-card" data-categoria="acessorios" data-animate="fadeUp" data-delay="100">
+          <div class="produto-card__img">
+            <div class="produto-card__placeholder"><i class="ri-watch-line"></i></div>
+            <span class="produto-card__badge produto-card__badge--promo">-20%</span>
+          </div>
+          <div class="produto-card__info">
+            <span class="produto-card__cat">Acessórios</span>
+            <h3 class="produto-card__name">Produto Exemplo 6</h3>
+            <div class="produto-card__price">
+              <span class="price__old">R$ 129,90</span>
+              <span class="price__current">R$ 103,90</span>
+            </div>
+            <a href="https://wa.me/5500000000000?text=Quero%20o%20Produto%20Exemplo%206" 
+               target="_blank" class="btn btn--primary btn--full">
+              <i class="ri-whatsapp-line"></i> Pedir no WhatsApp
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA para ver mais via WhatsApp -->
+      <div class="produtos__cta" data-animate="fadeUp">
+        <p>Não encontrou o que procura? Temos muito mais!</p>
+        <a href="https://wa.me/5500000000000?text=Olá!%20Quero%20ver%20o%20catálogo%20completo" 
+           target="_blank" class="btn btn--outline btn--lg">
+          <i class="ri-whatsapp-line"></i> Ver catálogo completo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SOBRE A LOJA
+       ========================================== -->
+  <section class="sobre" id="sobre">
+    <div class="container sobre__inner">
+
+      <!-- Coluna visual -->
+      <div class="sobre__visual" data-animate="fadeRight">
+        <div class="sobre__img-wrap">
+          <div class="sobre__img-placeholder">
+            <i class="ri-store-3-fill"></i>
+            <p>Foto da Equipe / Loja</p>
+          </div>
+        </div>
+        <!-- Card de anos de experiência -->
+        <div class="sobre__badge-float">
+          <strong>5+</strong>
+          <span>Anos de mercado</span>
+        </div>
+      </div>
+
+      <!-- Coluna de texto -->
+      <div class="sobre__content" data-animate="fadeLeft">
+        <span class="badge">Quem Somos</span>
+        <h2 class="section-title">A Pivô Shop nasceu<br>para facilitar sua vida</h2>
+        <p>Somos uma loja comprometida em oferecer produtos de qualidade com atendimento humanizado. Cada cliente é único e merece o melhor.</p>
+        <p>Nossa equipe está sempre pronta para ajudar você a encontrar exatamente o que precisa, seja pessoalmente ou pelo WhatsApp.</p>
+
+        <!-- Lista de diferenciais -->
+        <ul class="sobre__lista">
+          <li><i class="ri-check-line"></i> Atendimento personalizado</li>
+          <li><i class="ri-check-line"></i> Produtos com procedência garantida</li>
+          <li><i class="ri-check-line"></i> Política de troca sem burocracia</li>
+          <li><i class="ri-check-line"></i> Parcelamento sem juros</li>
+        </ul>
+
+        <a href="https://wa.me/5500000000000" target="_blank" class="btn btn--primary">
+          Fale conosco <i class="ri-arrow-right-line"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       HORÁRIOS + LOCALIZAÇÃO
+       ========================================== -->
+  <section class="info-loja" id="horarios">
+    <div class="container">
+      <div class="info-loja__grid">
+
+        <!-- Horários -->
+        <div class="info-card" data-animate="fadeUp">
+          <div class="info-card__icon"><i class="ri-time-line"></i></div>
+          <h3>Horários de Funcionamento</h3>
+          <ul class="horarios-lista">
+            <li>
+              <span class="dia">Segunda a Sexta</span>
+              <span class="hora">08h — 18h</span>
+            </li>
+            <li>
+              <span class="dia">Sábado</span>
+              <span class="hora">08h — 13h</span>
+            </li>
+            <li class="fechado">
+              <span class="dia">Domingo</span>
+              <span class="hora">Fechado</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Localização -->
+        <div class="info-card" data-animate="fadeUp" data-delay="100">
+          <div class="info-card__icon"><i class="ri-map-pin-2-line"></i></div>
+          <h3>Nossa Localização</h3>
+          <p class="info-card__address">
+            Rua Exemplo, 123 — Bairro<br>
+            Sua Cidade — UF<br>
+            CEP: 00000-000
+          </p>
+          <a href="https://maps.google.com" target="_blank" class="btn btn--outline btn--sm">
+            <i class="ri-map-pin-line"></i> Ver no mapa
+          </a>
+        </div>
+
+        <!-- Contato direto -->
+        <div class="info-card" data-animate="fadeUp" data-delay="200">
+          <div class="info-card__icon"><i class="ri-phone-line"></i></div>
+          <h3>Fale com a Gente</h3>
+          <div class="contatos-lista">
+            <a href="https://wa.me/5500000000000" target="_blank" class="contato-item contato-item--whatsapp">
+              <i class="ri-whatsapp-line"></i>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>(00) 00000-0000</span>
+              </div>
+            </a>
+            <a href="tel:+5500000000000" class="contato-item">
+              <i class="ri-phone-line"></i>
+              <div>
+                <strong>Telefone</strong>
+                <span>(00) 0000-0000</span>
+              </div>
+            </a>
+            <a href="mailto:contato@pivoshop.com.br" class="contato-item">
+              <i class="ri-mail-line"></i>
+              <div>
+                <strong>E-mail</strong>
+                <span>contato@pivoshop.com.br</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       MAPA (embed do Google Maps)
+       ========================================== -->
+  <section class="mapa-secao">
+    <!-- 
+      Para colocar seu endereço real:
+      1. Vá em maps.google.com
+      2. Pesquise seu endereço
+      3. Clique nos 3 pontos > Compartilhar > Incorporar mapa
+      4. Cole o iframe aqui no lugar do placeholder abaixo
+    -->
+    <div class="mapa-placeholder">
+      <i class="ri-map-2-line"></i>
+      <p>Substitua este bloco pelo iframe do Google Maps</p>
+      <small>maps.google.com → Seu endereço → Compartilhar → Incorporar mapa</small>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FORMULÁRIO DE CONTATO
+       ========================================== -->
+  <section class="contato" id="contato">
+    <div class="container contato__inner">
+
+      <div class="contato__info" data-animate="fadeRight">
+        <span class="badge">Entre em Contato</span>
+        <h2 class="section-title">Podemos<br>te ajudar!</h2>
+        <p>Preencha o formulário ou nos chame diretamente no WhatsApp. Respondemos em poucos minutos!</p>
+
+        <div class="contato__social">
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <i class="ri-facebook-line"></i>
+          </a>
+          <a href="https://wa.me/5500000000000" target="_blank" aria-label="WhatsApp">
+            <i class="ri-whatsapp-line"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Formulário -->
+      <div class="contato__form-wrap" data-animate="fadeLeft">
+        <!-- O formulário usa Formspree — gratuito, sem precisar de backend -->
+        <!-- Substitua YOUR_FORM_ID pelo seu ID em formspree.io -->
+        <form class="form" id="contatoForm">
+          <div class="form__row">
+            <div class="form__group">
+              <label for="nome">Seu Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="João Silva" required>
+            </div>
+            <div class="form__group">
+              <label for="telefone">WhatsApp / Telefone</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+          </div>
+          <div class="form__group">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto">
+              <option value="">Selecione um assunto</option>
+              <option value="produto">Dúvida sobre produto</option>
+              <option value="preco">Consulta de preço</option>
+              <option value="troca">Troca ou devolução</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full btn--lg">
+            <span id="btnText">Enviar Mensagem</span>
+            <i class="ri-send-plane-line"></i>
+          </button>
+          <!-- Feedback visual após envio -->
+          <div id="formFeedback" class="form__feedback" aria-live="polite"></div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <!-- Logo e descrição -->
+      <div class="footer__brand">
+        <a href="#inicio" class="logo">
+          <span class="logo__icon"><i class="ri-shopping-bag-3-fill"></i></span>
+          <span class="logo__text">Pivô<strong>Shop</strong></span>
+        </a>
+        <p>Qualidade e atendimento que você pode confiar. Venha nos visitar ou fale pelo WhatsApp!</p>
+        <div class="footer__social">
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="ri-facebook-line"></i></a>
+          <a href="https://wa.me/5500000000000" target="_blank" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+        </div>
+      </div>
+
+      <!-- Links rápidos -->
+      <div class="footer__links">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#promocoes">Promoções</a></li>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <!-- Informações -->
+      <div class="footer__info">
+        <h4>Informações</h4>
+        <ul>
+          <li><i class="ri-map-pin-line"></i> Rua Exemplo, 123 — Sua Cidade</li>
+          <li><i class="ri-time-line"></i> Seg–Sex: 08h–18h | Sáb: 08h–13h</li>
+          <li><i class="ri-whatsapp-line"></i> (00) 00000-0000</li>
+          <li><i class="ri-mail-line"></i> contato@pivoshop.com.br</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2025 Pivô Shop. Todos os direitos reservados.</p>
+        <p>Desenvolvido com ❤️ em HTML, CSS e JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       BOTÃO FLUTUANTE DO WHATSAPP
+       (Aparece em todo o site, canto inferior direito)
+       ========================================== -->
+  <a href="https://wa.me/5500000000000?text=Olá,%20vim%20pelo%20site!" 
+     target="_blank" 
+     class="whatsapp-float" 
+     aria-label="Falar no WhatsApp">
+    <i class="ri-whatsapp-line"></i>
+    <!-- Tooltip que aparece ao passar o mouse -->
+    <span class="whatsapp-float__tooltip">Fale conosco!</span>
+  </a>
+
+  <!-- Botão voltar ao topo -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <!-- ===== NOSSO JAVASCRIPT ===== -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
